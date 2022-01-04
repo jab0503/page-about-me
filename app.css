@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fff;
+}
+
+#main {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(asset/bg-img.jpg) no-repeat center / cover;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul li {
+  list-style-type: none;
+  padding-left: 0;
+  display: inline-block;
+}
+
+h1,
+h5 {
+  text-transform: capitalize;
+  margin-bottom: 1.15rem;
+  line-height: 1.2;
+}
+
+.heading {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.heading h5 {
+  font-size: 3.5rem;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.heading b {
+  font-weight: 300;
+}
+
+.icons ul li a {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.45rem;
+  height: 2.45rem;
+  border-radius: 50%;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.ah-headline.clip .ah-words-wrapper::after {
+  top: 20px;
+  height: 70%;
+  background-color: #ccc;
+}
+
+@media (max-width: 575px) {
+  .heading h5 {
+    font-size: 2rem;
+  }
+
+  .heading h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+  }
+
+  .ah-headline.clip .ah-words-wrapper::after {
+    top: 12px;
+    height: 74%;
+  }
+}
